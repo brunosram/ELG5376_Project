@@ -1,0 +1,14 @@
+To run a full testing iteration of this program: 
+Run :
+1 Watermarking\testEncode.m(be sure to put the water mark image in the same folder with this .m file)
+2 Watermarking\testbeta.m(put the audio files in the same folder with this file)
+3 Attack\attack2.m
+4 Extraction\testattack2.m
+5 Extraction\testDecode.m
+
+To test the capacity: modify the amount of data in the testeEncode.m, then uses SNR\testSNR.m to get the result.
+To test the SNR: uses SNR\testSNR.m to get the result.
+To test the robustness: uses Attack\attack2.m. This script will generate a number of different signal sample after different kinds attack. Change the "wav=wav_final_double;" in Attack\attack2.m to change the extracted signal.
+If mp3 compression is need to be tested, please use lame in command line to compress the signal before running attack2.m. 
+The code used to generate the watermark image is quoted in the end of Extraction\testDecode.m, when in Watermarking\testEncode.m the data read from picture is used, a extracted watermark can be generated. 
+ 
